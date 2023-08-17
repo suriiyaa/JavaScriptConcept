@@ -91,3 +91,140 @@ null
 undefined 
 symbol
 object
+
+Datatype conversion confusion | Javascript
+
+scenario 1 :
+
+//datatype conversion and confusion
+let mark = 430 
+console.log(typeof mark); //number
+console.log(typeof(mark)); //number
+
+scenario 2 :
+
+//datatype conversion and confusion
+
+let mark = "430"
+
+console.log(typeof mark); string
+console.log(typeof(mark)); string 
+//if we want to convert into Number
+let valueInNumber = Number(mark); 
+console.log(valueInNumber) //NAN : Not A Number
+console.log(typeof valueInNumber); number
+
+scenario 3 :
+
+//datatype conversion and confusion
+
+let mark = "430abc"
+
+console.log(typeof mark);  //string
+console.log(typeof(mark)); //string
+//if we want to convert into Number
+let valueInNumber = Number(mark);
+console.log(valueInNumber) //NAN : NOT A NUMBER
+console.log(typeof valueInNumber); // Number
+
+Scenario 4 :
+
+let mark = null
+
+console.log(mark); //null
+console.log(typeof mark); // object 
+console.log(typeof(mark)); //object
+let numberInValue = Number(mark); // here object converted into 0 
+console.log(numberInValue); // here object value will 0
+console.log(typeof numberInValue) // here 0 is a number
+
+scenario 5 :
+
+let mark = undefined
+
+console.log(mark); //undefined 
+console.log(typeof mark); // undefined 
+console.log(typeof(mark)); //undefined 
+let numberInValue = Number(mark); // here undefined converted into NAN (Not A Number)
+console.log(numberInValue); // NAN
+console.log(typeof numberInValue) // number
+
+scenario 6 :
+
+let mark = true
+
+console.log(mark); //true
+console.log(typeof mark); //boolean
+console.log(typeof(mark)); //boolean
+let numberInValue = Number(mark); // here true converted into 1 
+console.log(numberInValue); // 1
+console.log(typeof numberInValue) // number
+
+scenario 7 :
+
+let isLoggedIn = 1 ;
+
+console.log(isLoggedIn); // 1
+console.log(typeof isLoggedIn); // number
+
+let valueInBoolean = Boolean(isLoggedIn)
+
+console.log(valueInBoolean); //true
+console.log(typeof valueInBoolean); //boolean
+
+scenario 8 :
+
+let isLoggedIn = "value" ;
+
+console.log(isLoggedIn); //value
+console.log(typeof isLoggedIn); // string
+
+let valueInBoolean = Boolean(isLoggedIn)
+
+console.log(valueInBoolean); //true
+console.log(typeof valueInBoolean); //boolean
+
+scenario 9 :
+
+let isLoggedIn = "" ;
+
+console.log(isLoggedIn); //blank space
+console.log(typeof isLoggedIn); // string
+
+let valueInBoolean = Boolean(isLoggedIn)
+
+console.log(valueInBoolean); //false
+console.log(typeof valueInBoolean); //boolean
+
+note :
+in boolean data type
+
+1 = true
+0 = false 
+"" = false
+"suriya" = true
+
+scenario 10 :
+
+let someNumber = 360
+
+console.log(someNumber); //360
+console.log(typeof someNumber); //number
+
+let valueInString = String(someNumber);
+
+console.log(valueInString); // 360 will come and here 360 is not a number is a string
+
+//if we want to check the datatype of 360
+
+console.log(typeof valueInString); //string
+
+
+
+
+
+
+
+
+
+
