@@ -48,3 +48,46 @@ then we have to write the variable name within the console.table() parameter.
 │    4    │   'Automation TE'    │
 │    5    │      undefined       │
 └─────────┴──────────────────────┘
+
+/*
+if we declare the varibale as const once then 
+later want to change the variable value then its shows error msg 
+i'e : " TypeError: Assignment to constant variable. "
+*/
+
+/* if we are not intialize the variable then its show error 
+i'e : " undefined "
+
+Datatypes and ECMA standards | Javascript
+
+let name = "surya"
+let email = "surya@example.com"
+let password = 12345
+let isLoggedIn = true 
+let server = null 
+let state
+
+console.log(typeof "surya")
+console.log(typeof "surya@example.com")
+console.log(typeof 12345)
+console.log(typeof true)
+console.log(typeof null)
+console.log(typeof undefined)
+
+output : 
+string
+string
+number
+boolean
+object
+undefined
+
+datatype :
+number 
+bigint
+string
+boolean
+null
+undefined 
+symbol
+object

@@ -5,3 +5,5 @@ let password = "12345"
 let age ;
 
 console.table([id , name , email , password , age]);
+
+console.log(id);
